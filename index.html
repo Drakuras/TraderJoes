@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Joe's Gift Card Opportunity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Header / Logo Area -->
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="logo.png" alt="Trader Joe's Logo" class="tjs-logo-img">
+            </div>
+        </header>
+
+        <!-- Main Card -->
+        <div class="offer-card">
+            <h1 class="headline">Your $500 Trader Joe's Gift Card</h1>
+            <p class="sub-headline">Complete the steps below to claim your reward.</p>
+
+            <!-- Gift Card Graphic (CSS) -->
+            <div class="gift-card-graphic">
+                <div class="card-inner">
+                    <img src="logo.png" alt="Trader Joe's" class="card-logo-img">
+                    <div class="card-value">$500.00</div>
+                    <div class="card-chip"></div>
+                </div>
+            </div>
+
+            <!-- Action Button -->
+            <button id="check-eligibility-btn" class="cta-button">CHECK ELIGIBILITY</button>
+
+            <p class="scarcity-text"><span class="pulse">●</span> Limited quantity available for today.</p>
+        </div>
+
+        <!-- How it Works Section -->
+        <div class="info-section">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <strong>Check Eligibility</strong>
+                        <p>Answer a quick question to confirm you qualify.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <strong>Complete Deals</strong>
+                        <p>Complete 4-5 simple deals (apps, games, or trials) to unlock your reward.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <strong>Claim Reward</strong>
+                        <p>Receive your $500 Trader Joe's Gift Card instantly upon verification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="info-section faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">Is this really free?</div>
+                <div class="faq-answer">Yes, there is no cost to participate. You primarily "pay" with your time by
+                    testing apps and completing deals.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How long does it take?</div>
+                <div class="faq-answer">Most users complete the required deals in 15-20 minutes.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">When do I get the card?</div>
+                <div class="faq-answer">Once your deals are verified (usually instantly), your digital gift card code is
+                    emailed to you.</div>
+            </div>
+        </div>
+
+        <!-- Eligibility Modal -->
+        <div id="modal-overlay" class="modal-overlay hidden">
+            <div class="modal">
+                <h3 id="modal-title">Eligibility Check</h3>
+                <p id="modal-question" class="modal-question">Are you over 18 years of age?</p>
+                <div id="modal-actions" class="modal-actions">
+                    <button id="btn-yes" class="modal-btn confirm">YES</button>
+                    <button id="btn-no" class="modal-btn cancel">NO</button>
+                </div>
+                <div id="ineligible-msg" class="hidden" style="margin-top: 20px; color: #c8102e; font-weight: bold;">
+                    <p>Sorry, you must meet ensuring requirements to participate.</p>
+                    <button id="btn-close" class="modal-btn cancel" style="margin-top: 15px;">CLOSE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Contact</a>
+            </div>
+            <p class="disclaimer">
+                This offer is not affiliated with or endorsed by Trader Joe's.
+                This is an independent rewards program.
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
