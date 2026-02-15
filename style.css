@@ -75,7 +75,6 @@ body {
 .header-logo {
     height: 50px;
     width: auto;
-    filter: brightness(0) invert(1);
 }
 
 .program-info {
