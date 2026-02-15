@@ -1,18 +1,18 @@
-const checkBtn = document.getElementById('check-eligibility-btn');
-const modalOverlay = document.getElementById('modal-overlay');
+// Professional Redesign - JavaScript
 
-// Modal Elements
+// Element References
+const primaryCta = document.getElementById('primary-cta');
+const modalOverlay = document.getElementById('modal-overlay');
 const modalTitle = document.getElementById('modal-title');
 const modalQuestion = document.getElementById('modal-question');
 const modalActions = document.getElementById('modal-actions');
 const btnYes = document.getElementById('btn-yes');
 const btnNo = document.getElementById('btn-no');
-
 const ineligibleMsg = document.getElementById('ineligible-msg');
 const btnClose = document.getElementById('btn-close');
 
-// Benefit Estimator Elements
-const statusBtns = document.querySelectorAll('.status-btn');
+// Calculator Elements
+const statusButtons = document.querySelectorAll('.radio-btn');
 const householdSlider = document.getElementById('household-slider');
 const householdVal = document.getElementById('household-val');
 const estimatedAmount = document.getElementById('estimated-amount');
@@ -32,79 +32,92 @@ function updateEstimation() {
 
     // No cap - scales up based on household size and status
 
-    // Animate nicely? For now just set text
+    // Update display
     estimatedAmount.textContent = `$${total.toFixed(2)}`;
 }
 
 // Status Button Click
-statusBtns.forEach(btn => {
+statusButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-        // Remove active class from all
-        statusBtns.forEach(b => b.classList.remove('active'));
-        // Add to clicked
+        // Remove active from all
+        statusButtons.forEach(b => b.classList.remove('active'));
+        // Add active to clicked
         btn.classList.add('active');
-
-        // Update Base Amount
+        // Update base amount
         baseAmount = parseInt(btn.getAttribute('data-val'));
-
+        // Recalculate
         updateEstimation();
     });
 });
 
-// Slider Input
-householdSlider.addEventListener('input', (e) => {
-    householdVal.textContent = e.target.value;
+// Slider Change
+householdSlider.addEventListener('input', () => {
+    householdVal.textContent = householdSlider.value;
     updateEstimation();
 });
 
-// Initial Calculation
+// Initialize on load
 updateEstimation();
 
-
-// --- Modal Logic ---
-
-// Open Modal
-checkBtn.addEventListener('click', () => {
-    resetModal();
+// Modal Logic
+primaryCta.addEventListener('click', () => {
+    currentStep = 1;
+    showQuestion1();
     modalOverlay.classList.remove('hidden');
 });
 
-function resetModal() {
-    currentStep = 1;
-    modalTitle.textContent = "Eligibility Check";
-    modalQuestion.textContent = "Are you over 18 years of age?";
+function showQuestion1() {
+    modalTitle.textContent = "Eligibility Verification";
+    modalQuestion.textContent = "Are you 18 years of age or older?";
     modalActions.classList.remove('hidden');
     ineligibleMsg.classList.add('hidden');
-    btnYes.textContent = "YES";
-    btnYes.disabled = false;
+}
+
+function showQuestion2() {
+    modalTitle.textContent = "Eligibility Verification";
+    modalQuestion.textContent = "Do you currently reside in the USA, Canada, UK, or Australia?";
+    modalActions.classList.remove('hidden');
+    ineligibleMsg.classList.add('hidden');
+}
+
+function showIneligible() {
+    modalActions.classList.add('hidden');
+    ineligibleMsg.classList.remove('hidden');
+}
+
+function showVerifying() {
+    modalTitle.textContent = "Verifying Eligibility";
+    modalQuestion.textContent = "Please wait while we verify your eligibility...";
+    modalActions.classList.add('hidden');
+
+    // Simulate verification delay
+    setTimeout(() => {
+        window.location.href = AFFILIATE_LINK;
+    }, 1500);
 }
 
 btnYes.addEventListener('click', () => {
     if (currentStep === 1) {
         currentStep = 2;
-        modalQuestion.textContent = "Do you live in the USA, Canada, UK, or Australia?";
+        showQuestion2();
     } else if (currentStep === 2) {
-        btnYes.textContent = "Verifying...";
-        btnYes.disabled = true;
-        setTimeout(() => {
-            window.location.href = AFFILIATE_LINK;
-        }, 800);
+        showVerifying();
     }
 });
 
 btnNo.addEventListener('click', () => {
-    modalActions.classList.add('hidden');
-    modalTitle.textContent = "Not Eligible";
-    modalQuestion.textContent = "";
-    ineligibleMsg.classList.remove('hidden');
+    showIneligible();
 });
 
 btnClose.addEventListener('click', () => {
     modalOverlay.classList.add('hidden');
+    currentStep = 1;
 });
 
+// Close modal on overlay click
 modalOverlay.addEventListener('click', (e) => {
     if (e.target === modalOverlay) {
         modalOverlay.classList.add('hidden');
+        currentStep = 1;
     }
 });
