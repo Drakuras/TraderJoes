@@ -20,7 +20,7 @@ const estimatedAmount = document.getElementById('estimated-amount');
 const AFFILIATE_LINK = "https://glctrk.org/aff_c?offer_id=2358&aff_id=32911";
 
 let currentStep = 1;
-let baseAmount = 100;
+let baseAmount = 500;
 
 // Initialize Estimator
 function updateEstimation() {
@@ -30,8 +30,7 @@ function updateEstimation() {
     // Formula: Base (from Status) + (HouseholdSize * 50)
     let total = baseAmount + (members * multiplier);
 
-    // Cap at $500
-    if (total > 500) total = 500;
+    // No cap - scales up based on household size and status
 
     // Animate nicely? For now just set text
     estimatedAmount.textContent = `$${total.toFixed(2)}`;
