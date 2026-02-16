@@ -4,299 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Assistance Partnership Program | Trader Joe's</title>
+    <title>Trader Joe's Gift Card Registration</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Official Header Bar -->
-    <header class="official-header">
-        <div class="header-container">
-            <div class="program-branding">
-                <img src="logo.png" alt="Trader Joe's" class="header-logo">
-                <div class="program-info">
-                    <h1 class="program-title">Grocery Assistance Partnership</h1>
-                    <p class="program-subtitle">2024-2025 Enrollment Period</p>
-                </div>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-section">
+            <img src="logo.png" alt="Trader Joe's" class="logo">
+            <h1 class="brand-name">Trader Joe's</h1>
+        </div>
+
+        <!-- Main Heading -->
+        <div class="header-section">
+            <h2 class="main-title">Complete Your Registration</h2>
+            <p class="subtitle">Follow these simple steps to claim your $500 Trader Joe's gift card</p>
+        </div>
+
+        <!-- Registration Steps -->
+        <div class="steps-section">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-text">Click on "Claim Now"</div>
             </div>
-            <div class="partner-badge">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-                <span>Verified Partner</span>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-text">Enter your email and basic info</div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-text">Complete 3-5 sponsored deals</div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <div class="step-text">Enjoy your $500 Trader Joe's gift card!</div>
             </div>
         </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">Trader Joe's Supplemental Grocery Assistance Program</h2>
-                <p class="hero-subtitle">Financial support for eligible households to offset rising food costs</p>
+        <!-- CTA Button -->
+        <div class="cta-section">
+            <button id="claim-btn" class="claim-button">CLAIM NOW</button>
+            <p class="disclaimer">By clicking "Claim Now", you agree to complete the required steps to receive your gift
+                card.</p>
+        </div>
 
-                <div class="benefit-highlight">
-                    <span class="benefit-label">Qualified households may receive up to</span>
-                    <span class="benefit-amount">$500 - $1,150</span>
-                    <span class="benefit-period">in grocery vouchers</span>
-                </div>
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3 class="faq-title">Frequently Asked Questions</h3>
 
-                <button id="primary-cta" class="cta-primary">Apply Now</button>
-
-                <div class="trust-indicators">
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
-                        <span>Secure Application</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                        <span>Privacy Protected</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>127,453 Families Assisted</span>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long do the deals take?</span>
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Most users complete the required deals in 15-20 minutes. The deals typically involve downloading
+                        apps, completing short surveys, or signing up for trial offers.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Benefits Overview -->
-    <section class="benefits-overview">
-        <div class="container">
-            <h3 class="section-title">Assistance Tiers</h3>
-            <div class="benefit-cards">
-                <div class="benefit-card">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <h4>Single Adult</h4>
-                    <p class="tier-amount">$500 - $900</p>
-                    <p class="tier-desc">Base assistance for individual households</p>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What are deals?</span>
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Deals are sponsored offers from our partners. They include activities like trying new apps,
+                        completing surveys, or signing up for services. Each completed deal earns you credit toward your
+                        gift card.</p>
                 </div>
-                <div class="benefit-card highlighted">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h4>Senior Citizen</h4>
-                    <p class="tier-amount">$600 - $1,000</p>
-                    <p class="tier-desc">Enhanced support for seniors 65+</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How many deals do I have to do?</span>
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>You'll need to complete between 3-5 sponsored deals to qualify for your $500 gift card. The exact
+                        number may vary based on the deals you choose.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="8.5" cy="7" r="4"></circle>
-                            <polyline points="17 11 19 13 23 9"></polyline>
-                        </svg>
-                    </div>
-                    <h4>Single Parent</h4>
-                    <p class="tier-amount">$700 - $1,100</p>
-                    <p class="tier-desc">Additional assistance for single-parent families</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h4>Family Household</h4>
-                    <p class="tier-amount">$800 - $1,200</p>
-                    <p class="tier-desc">Comprehensive family support</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>When will I receive my reward?</span>
+                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Once your deals are verified (usually instantly), your digital gift card code will be emailed to
+                        you within 24 hours.</p>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Benefit Calculator -->
-    <section class="calculator-section">
-        <div class="container">
-            <div class="calculator-card">
-                <h3>Estimate Your Benefit</h3>
-                <p class="calculator-intro">Calculate your potential assistance amount based on your household profile.
-                </p>
-
-                <div class="calculator-form">
-                    <div class="form-group">
-                        <label>Household Type</label>
-                        <div class="radio-group">
-                            <button class="radio-btn active" data-val="500">Single</button>
-                            <button class="radio-btn" data-val="600">Senior</button>
-                            <button class="radio-btn" data-val="700">Single Parent</button>
-                            <button class="radio-btn" data-val="800">Family</button>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Household Size: <span id="household-val">1</span> member(s)</label>
-                        <input type="range" min="1" max="8" value="1" class="range-slider" id="household-slider">
-                        <div class="slider-labels">
-                            <span>1</span>
-                            <span>8</span>
-                        </div>
-                    </div>
-
-                    <div class="estimated-result">
-                        <span class="result-label">Estimated Monthly Benefit</span>
-                        <span class="result-amount" id="estimated-amount">$550.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <h3 class="section-title">Application Process</h3>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h4>Verify Eligibility</h4>
-                    <p>Complete a brief eligibility verification to confirm program requirements.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h4>Complete Participation Tasks</h4>
-                    <p>Fulfill 4-5 simple participation requirements (surveys, app trials, or offers).</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h4>Receive Your Voucher</h4>
-                    <p>Digital voucher code delivered via email upon verification, typically within 24 hours.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Program -->
-    <section class="about-program">
-        <div class="container">
-            <div class="about-content">
-                <h3 class="section-title">About This Program</h3>
-                <p>The Grocery Assistance Partnership is an initiative designed to provide supplemental food support to
-                    eligible households facing increased grocery costs. Through partnerships with major retailers like
-                    Trader Joe's, we distribute vouchers funded by brand partnerships and consumer participation
-                    programs.</p>
-                <p>Since 2020, we have assisted over 127,000 families nationwide with an average benefit of $650 per
-                    household.</p>
-
-                <div class="program-stats">
-                    <div class="stat">
-                        <strong>127,453</strong>
-                        <span>Families Assisted</span>
-                    </div>
-                    <div class="stat">
-                        <strong>$650</strong>
-                        <span>Average Benefit</span>
-                    </div>
-                    <div class="stat">
-                        <strong>4.8/5</strong>
-                        <span>Satisfaction Rating</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq-section">
-        <div class="container">
-            <h3 class="section-title">Frequently Asked Questions</h3>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h4>What is the cost to participate?</h4>
-                    <p>There is no monetary cost. Participants invest approximately 15-20 minutes completing
-                        participation tasks (surveys, app trials, or promotional offers).</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Who is eligible for this program?</h4>
-                    <p>Participants must be 18 years or older and reside in the USA, Canada, UK, or Australia. All
-                        household types are eligible.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How long does the process take?</h4>
-                    <p>Most participants complete the verification and tasks within 15-20 minutes. Voucher codes are
-                        typically delivered within 24 hours of task completion.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How do I receive my voucher?</h4>
-                    <p>Upon verification of completed tasks, your digital voucher code will be sent to your provided
-                        email address.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Eligibility Modal -->
-    <div id="modal-overlay" class="modal-overlay hidden">
-        <div class="modal">
-            <h3 id="modal-title">Eligibility Verification</h3>
-            <p id="modal-question" class="modal-question">Are you 18 years of age or older?</p>
-            <div id="modal-actions" class="modal-actions">
-                <button id="btn-yes" class="modal-btn confirm">Yes</button>
-                <button id="btn-no" class="modal-btn cancel">No</button>
-            </div>
-            <div id="ineligible-msg" class="hidden eligibility-message">
-                <p>We're sorry, but you do not meet the minimum eligibility requirements for this program.</p>
-                <button id="btn-close" class="modal-btn">Close</button>
-            </div>
-        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>This offer is not affiliated with or endorsed by Trader Joe's. This is an independent rewards program.
+            </p>
+        </footer>
     </div>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="#">Terms of Service</a>
-                    <span>|</span>
-                    <a href="#">Contact Support</a>
-                </div>
-                <p class="footer-disclaimer">
-                    This program is independently operated and is not directly affiliated with or endorsed by Trader
-                    Joe's.
-                    Vouchers are funded through brand partnership and consumer participation initiatives.
-                </p>
-                <p class="footer-copyright">
-                    © 2024 Grocery Assistance Partnership. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
