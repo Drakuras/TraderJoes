@@ -35,10 +35,10 @@ body {
 .brand-name {
     font-size: 36px;
     font-weight: 700;
-    color: #0071DC;
+    color: #C8102E;
     margin: 0;
     padding-bottom: 8px;
-    border-bottom: 4px solid #0071DC;
+    border-bottom: 4px solid #C8102E;
     display: inline-block;
 }
 
@@ -87,7 +87,7 @@ body {
 .step-number {
     width: 44px;
     height: 44px;
-    background: #0071DC;
+    background: #C8102E;
     color: white;
     border-radius: 50%;
     display: flex;
