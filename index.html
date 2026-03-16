@@ -2,118 +2,236 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trader Joe's Gift Card Registration</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target Rewards Program — $500 in Target Gift Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        target: '#CC0000',
+                        targetDark: '#990000',
+                        targetLight: '#FCE6E6',
+                        targetGray: '#6E6E73',
+                        targetBorder: '#D2D2D7'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="min-h-screen bg-gray-50 max-w-md mx-auto antialiased text-[#1D1D1F] overflow-x-hidden">
 
-    <div class="container">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="logo.png" alt="Trader Joe's" class="logo">
-            <h1 class="brand-name">Trader Joe's</h1>
-        </div>
-
-        <!-- Main Heading -->
-        <div class="header-section">
-            <h2 class="main-title">Complete Your Registration</h2>
-            <p class="subtitle">Follow these simple steps to claim your $500 Trader Joe's gift card</p>
-        </div>
-
-        <!-- Registration Steps -->
-        <div class="steps-section">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <div class="step-text">Click on "Claim Now"</div>
+    <!-- Main Landing -->
+    <div id="main-landing" class="bg-white min-h-screen pb-10 shadow-sm border-x border-targetBorder/20">
+        <!-- Hero: Logo + Title + Subtitle -->
+        <section class="pt-4 pb-0 px-4 text-center">
+            <div class="flex justify-center mb-2">
+                <img src="logo.svg" alt="Target" class="h-14 w-auto object-contain" />
             </div>
-
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <div class="step-text">Enter your email and basic info</div>
+            <h2 class="text-lg font-bold text-[#1D1D1F] mb-2 tracking-tight">Target Rewards Program</h2>
+            <div class="bg-gray-50 rounded-[14px] p-3 mb-0 mx-2 border border-black/5 shadow-sm">
+                <p class="text-[13px] text-[#1D1D1F] text-center leading-relaxed">
+                    Follow these simple steps to get your <strong
+                        class="font-bold px-1 py-0.5 bg-white text-target rounded shadow-sm border border-target/10">$500
+                        Target gift card</strong>.
+                </p>
             </div>
-
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <div class="step-text">Complete 4-5 sponsored deals</div>
+            <div class="w-full max-w-[280px] mx-auto rounded-2xl overflow-hidden"
+                style="height: 150px; margin: 15px auto;">
+                <img src="basket.png" alt="Target $500 Gift Card"
+                    class="w-full h-full object-cover object-center block" />
             </div>
+        </section>
 
-            <div class="step-card">
-                <div class="step-number">4</div>
-                <div class="step-text">Enjoy your $500 Trader Joe's gift card!</div>
+        <!-- 4 Numbered Steps -->
+        <section class="px-4 pb-4 pt-0">
+            <div class="space-y-2.5">
+                <div
+                    class="flex items-center gap-4 bg-white rounded-2xl border border-targetBorder/40 p-3.5 shadow-sm hover:border-target/30 transition-colors">
+                    <div
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-target flex items-center justify-center text-white font-bold text-sm shadow-sm ring-4 ring-targetLight">
+                        1</div>
+                    <span class="text-[15px] font-semibold text-[#1D1D1F] tracking-tight">Click on "Get started
+                        now"</span>
+                </div>
+                <div
+                    class="flex items-center gap-4 bg-white rounded-2xl border border-targetBorder/40 p-3.5 shadow-sm hover:border-target/30 transition-colors">
+                    <div
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-target flex items-center justify-center text-white font-bold text-sm shadow-sm ring-4 ring-targetLight">
+                        2</div>
+                    <span class="text-[15px] font-semibold text-[#1D1D1F] tracking-tight">Enter your email and basic
+                        info</span>
+                </div>
+                <div
+                    class="flex items-center gap-4 bg-white rounded-2xl border border-targetBorder/40 p-3.5 shadow-sm hover:border-target/30 transition-colors">
+                    <div
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-target flex items-center justify-center text-white font-bold text-sm shadow-sm ring-4 ring-targetLight">
+                        3</div>
+                    <span class="text-[15px] font-semibold text-[#1D1D1F] tracking-tight">Complete 4-5 sponsored
+                        deals</span>
+                </div>
+                <div
+                    class="flex items-center gap-4 bg-white rounded-2xl border border-targetBorder/40 p-3.5 shadow-sm hover:border-target/30 transition-colors border-2 border-target/20">
+                    <div
+                        class="flex-shrink-0 w-8 h-8 rounded-full bg-target flex items-center justify-center text-white font-bold text-sm shadow-sm ring-4 ring-targetLight">
+                        4</div>
+                    <span class="text-[15px] font-bold text-[#1D1D1F] tracking-tight">Enjoy your $500 Target gift
+                        card!</span>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- CTA Button -->
-        <div class="cta-section">
-            <button id="claim-btn" class="claim-button">CLAIM NOW</button>
-            <p class="disclaimer">By clicking "Claim Now", you agree to complete the required steps to receive your gift
-                card.</p>
-        </div>
+        <!-- CTA Section -->
+        <section class="px-4 py-3">
+            <button id="claim-btn"
+                class="relative overflow-hidden w-full bg-target hover:bg-targetDark active:bg-[#990000] text-white font-bold text-[17px] px-6 py-[18px] rounded-2xl transition-all duration-200 shadow-[0_8px_16px_-6px_rgba(204,0,0,0.5)] hover:shadow-[0_12px_20px_-8px_rgba(204,0,0,0.6)] active:scale-[0.98] mb-3 group">
+                <span class="relative z-10 flex items-center justify-center gap-2">
+                    Get started now
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </span>
+            </button>
+            <p class="text-[11px] text-targetGray text-center px-4 leading-relaxed font-medium">
+                By clicking "Get started now", you agree to complete the required steps to receive your gift card.
+            </p>
+        </section>
+
+        <!-- Compact Progress Bar Section -->
+        <section class="px-4 pt-3 pb-4">
+            <div class="bg-gray-50 rounded-2xl border border-targetBorder/30 p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-[13px] font-bold text-[#1D1D1F]">
+                        Deal Completion Progress
+                    </span>
+                    <span class="text-[13px] font-bold text-target bg-targetLight px-2 py-0.5 rounded-full">
+                        1 of 5
+                    </span>
+                </div>
+                <div class="h-1.5 bg-gray-200 rounded-full mb-3 overflow-hidden">
+                    <div class="progress-fill h-full bg-target rounded-full w-[20%] transition-all duration-1000"></div>
+                </div>
+                <p class="text-[11.5px] text-targetGray text-center font-medium leading-relaxed">
+                    You must complete <strong class="text-[#1D1D1F]">5 partner deals</strong> to get your code.
+                </p>
+            </div>
+        </section>
 
         <!-- FAQ Section -->
-        <div class="faq-section">
-            <h3 class="faq-title">Frequently Asked Questions</h3>
+        <section class="px-4 pt-4 pb-2 bg-white">
+            <h2 class="text-[19px] font-bold text-[#1D1D1F] mb-4 tracking-tight text-center">
+                Frequently Asked Questions
+            </h2>
+            <div class="space-y-0 border-t border-gray-100">
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How long do the deals take?</span>
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </button>
-                <div class="faq-answer">
-                    <p>Most users complete the required deals in 15-20 minutes. The deals typically involve downloading
-                        apps, completing short surveys, or signing up for trial offers.</p>
+                <div class="border-b border-gray-100 faq-item">
+                    <button class="w-full text-left py-4 flex items-center justify-between gap-3 faq-question">
+                        <span class="text-[14px] font-bold text-[#1D1D1F] pr-2 tracking-tight">How long do the deals
+                            take?</span>
+                        <div
+                            class="w-6 h-6 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 transition-colors group-hover:bg-targetLight">
+                            <svg class="w-4 h-4 text-target transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="text-[13.5px] text-targetGray pb-5 leading-relaxed">Most users complete the required
+                            deals in 15-20 minutes. The deals typically involve downloading apps, completing short
+                            surveys, or signing up for trial offers.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>What are deals?</span>
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </button>
-                <div class="faq-answer">
-                    <p>Deals are sponsored offers from our partners. They include activities like trying new apps,
-                        completing surveys, or signing up for services. Each completed deal earns you credit toward your
-                        gift card.</p>
+                <div class="border-b border-gray-100 faq-item">
+                    <button class="w-full text-left py-4 flex items-center justify-between gap-3 faq-question">
+                        <span class="text-[14px] font-bold text-[#1D1D1F] pr-2 tracking-tight">What are deals?</span>
+                        <div
+                            class="w-6 h-6 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 transition-colors group-hover:bg-targetLight">
+                            <svg class="w-4 h-4 text-target transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="text-[13.5px] text-targetGray pb-5 leading-relaxed">Deals are sponsored offers from
+                            our partners. They include activities like trying new apps, completing surveys, or signing
+                            up for services. Each completed deal earns you credit toward your gift card.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How many deals do I have to do?</span>
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </button>
-                <div class="faq-answer">
-                    <p>You'll need to complete between 4-5 sponsored deals to qualify for your $500 gift card. The exact
-                        number may vary based on the deals you choose.</p>
+                <div class="border-b border-gray-100 faq-item">
+                    <button class="w-full text-left py-4 flex items-center justify-between gap-3 faq-question">
+                        <span class="text-[14px] font-bold text-[#1D1D1F] pr-2 tracking-tight">How many deals do I have
+                            to do?</span>
+                        <div
+                            class="w-6 h-6 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 transition-colors group-hover:bg-targetLight">
+                            <svg class="w-4 h-4 text-target transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="text-[13.5px] text-targetGray pb-5 leading-relaxed">You'll need to complete 5
+                            sponsored deals to qualify for your $500 gift card. The exact number may vary slightly based
+                            on the deals you choose.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>When will I receive my reward?</span>
-                    <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </button>
-                <div class="faq-answer">
-                    <p>Once your deals are verified (usually instantly), your digital gift card code will be emailed to
-                        you within 24 hours.</p>
+                <div class="border-b border-gray-100 faq-item">
+                    <button class="w-full text-left py-4 flex items-center justify-between gap-3 faq-question">
+                        <span class="text-[14px] font-bold text-[#1D1D1F] pr-2 tracking-tight">When will I receive my
+                            reward?</span>
+                        <div
+                            class="w-6 h-6 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 transition-colors group-hover:bg-targetLight">
+                            <svg class="w-4 h-4 text-target transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="text-[13.5px] text-targetGray pb-5 leading-relaxed">Once your deals are verified
+                            (usually instantly), your digital gift card code will be emailed to you within 24 hours.</p>
+                    </div>
                 </div>
+
             </div>
-        </div>
+        </section>
 
         <!-- Footer -->
-        <footer class="footer">
-            <p>This offer is not affiliated with or endorsed by Trader Joe's. This is an independent rewards program.
+        <footer class="px-6 py-8 border-t border-gray-100 bg-gray-50/50 mt-6 pb-12">
+            <div class="flex flex-wrap justify-center gap-4 mb-4 text-[12px] font-medium">
+                <a href="#" class="text-target hover:underline">Privacy Policy</a>
+                <span class="text-targetBorder">•</span>
+                <a href="#" class="text-target hover:underline">Terms</a>
+                <span class="text-targetBorder">•</span>
+                <a href="#" class="text-target hover:underline">Support</a>
+            </div>
+            <p class="text-[10px] text-targetGray/80 text-center leading-relaxed max-w-[90%] mx-auto">
+                This site is an independent promotional experience and is not affiliated with, endorsed by, or sponsored
+                by Target Corporation; all Target names, logos, and trademarks are the property of their respective
+                owners and are used here for identification only, and any rewards or offers described are provided
+                solely by this website and its partners.
             </p>
         </footer>
     </div>
